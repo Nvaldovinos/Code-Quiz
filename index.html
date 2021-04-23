@@ -10,10 +10,14 @@
     <header class="header-container">
         <div id="quiz-tittle">Coding Quiz Fundamentals</div>
         <p>Press start to start quiz</p>
-        <button class="start">Start</button>
+        <button id="start">Start</button>
     </header>
+
 <body>
+    <div id="timer"> </div>
+
     <div id="questions">
+        <h3 id="question"></h3>
         <button class="options" id="firstA" onclick="answer('firstA')"></button>
         <button class="options" id="secondB" onclick="answer('secondB')"></button>
         <button class="options" id="thirdC" onclick="answer('thirdC')"></button>
