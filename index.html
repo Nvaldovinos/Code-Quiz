@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-    <header class="header-container">
-        <div id="quiz-tittle">Coding Quiz Fundamentals</div>
-        <p>Press start to start quiz</p>
-        <button id="start">Start</button>
-    </header>
 
 <body>
+    <!--What the user sees when page is loaded-->
+    <div class="container">
+        <div class="title" id="quiz-tittle">
+            <span>Coding Quiz Fundamentals</span>
+        </div>
+        <div class="info">
+            <p class="satement">This quiz is timed! Remember "C is always the answer"</p>
+        </div>
+    </div>
+
+    <div id="start" class="start-button"><button>Start Quiz</button></div>
     <div id="timer"> </div>
 
-    <div id="questions">
-        <h3 id="question"></h3>
+    <!-- -Questions-->
+    <div class="questions-class" id="questions">
+        <h1 id="question"></h1>
         <button class="options" id="firstA" onclick="answer('firstA')"></button>
         <button class="options" id="secondB" onclick="answer('secondB')"></button>
         <button class="options" id="thirdC" onclick="answer('thirdC')"></button>
         <button class="options" id="fourthD" onclick="answer('fourthD')"></button>
     </div>
 
-
+    <footer>
+        <div class="total">
+            <span>
+                <p>2</p>Of<p>2</p>Questions
+            </span>
+        </div>
+        <button class="nxt-q">Next Question</button>
+    </footer>
 
 
 
 
     <script src="assets/javaScript/script.js"></script>
 </body>
+
 </html>
